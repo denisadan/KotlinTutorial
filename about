@@ -1,0 +1,56 @@
+Session 1
+
+- statically typed; everything is determined at compile time
+- oop + functional programming
+- runs on jvm
+
+Features:
+
+1. conciseness
+
+2. safety (avoiding npe)
+
+3. pragmatism
+
+4. no code conventions
+   no performance arguments
+
+- compiler converts from .kt files to  . class files, interpreted by JVM
+- kotlin runtime library vs JRE
+
+
+- top level functions - functions outside???
+
+Session 2
+
+- Variables
+    - statically typed => tipul fiecarei variabile este cunoscut la compile time
+    - val = final variables in java/ immutable; this is the good practice to use
+    - var = mutable
+
+- Type Aliases
+
+- Differences between Java and Kotlin
+    - no ;
+    - use of wrappers over java methods
+    - hard/soft keywords = reserved words/you can use reserved words
+    - use [i] to access array members
+    - String is different than in Java
+    - Exceptions:
+        - no checked and unchecked, no throws
+        - all are unchecked, no need to be declared
+    - ternary op is replaced by if
+    - no for loop
+    - no static keyword, but the concept still exists
+    - no new keyword
+    - Any ~ Object in Java
+    - is ~ instanceof
+    - casting = AS
+    - smart casting; after we use IS check no need to use AS
+    - String templates: to use the value of a variable we use $
+
+- Equality  Java                    | Kotlin
+            referential ==          | ===
+            structural  equals      | ==, equals  ; not !==, !=
+
+
