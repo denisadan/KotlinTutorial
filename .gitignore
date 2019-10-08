@@ -1,0 +1,9 @@
+# Default ignored files
+/workspace.xml
+/target
+.idea/
+.project
+.class
+.settings
+KotlinTutorial.iml
+*/META-INF/*
