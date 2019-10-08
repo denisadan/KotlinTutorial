@@ -55,6 +55,18 @@ fun main() {
         val den = 20
 
         println("$num divided by $den is ${num / den}")
+
+        // """ with strings
+        var filePath = """C:\Users"""
+        val eggName = "Humpty"
+
+        val humptyDumpty = """$eggName Dumpty
+        |bla bla  $eggName
+        |bla bla $eggName
+        |bla bla""".trimMargin()
+        println(humptyDumpty)
+
+
     }
 }
 

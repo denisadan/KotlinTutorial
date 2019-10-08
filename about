@@ -51,6 +51,9 @@ Session 2
 
 - Equality  Java                    | Kotlin
             referential ==          | ===
-            structural  equals      | ==, equals  ; not !==, !=
+            structural  equals      | ==, equals  ;   not !==, !=
 
+Session 3
 
+- raw strings : """ , no escape needed
+- REPL = ReadEvalPrintLine
