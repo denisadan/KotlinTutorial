@@ -1,5 +1,6 @@
 package session1
 
+// tested the java to Kotlin converter
 class Mouse @JvmOverloads constructor(
     private val weight: Int,
     private val numTeeth: Int = 16,

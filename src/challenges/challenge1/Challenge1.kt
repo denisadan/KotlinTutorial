@@ -1,5 +1,7 @@
 package challenges.challenge1
 
+/*Challenge after the first module*/
+
 fun main() {
     val hello1 = "Hello"
     val hello2 = "Hello"
