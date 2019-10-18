@@ -57,3 +57,16 @@ Session 3
 
 - raw strings : """ , no escape needed
 - REPL = ReadEvalPrintLine
+
+
+Session5
+- null references
+- we cannot assign null directly. We have to add?
+-  variable?.toUppercase ==== null check
+- ? short circuit operator; replace and inline all null checks
+- elvis operator: assign a default value when something is null  ?:
+- safe cast operator as? => no class cast exception
+- !! forces NPE to be thrown <---> if ceva == null throw Exception
+- LET function:
+   - x?.let { printText(it) }  let this happen as long it is not null
+- equals is null safe; it already null checks
