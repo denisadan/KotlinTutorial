@@ -59,7 +59,7 @@ Session 3
 - REPL = ReadEvalPrintLine
 
 
-Session5
+Session 5
 - null references
 - we cannot assign null directly. We have to add?
 -  variable?.toUppercase ==== null check
@@ -71,3 +71,62 @@ Session5
    - x?.let { printText(it) }  let this happen as long it is not null
    - if x!= null do something
 - equals is null safe; it already null checks
+
+Session 7
+Access modifiers
+- public, private, protected, internal
+TOP-LEVEL
+    - private = visible in the same file
+    - protected - no
+    - public = everywhere
+- we can have them outside a class
+- no match between file name and class name
+- we can have private class
+- module = group a files compiled together
+ - internal = visible in the module
+- by default public and final
+
+CONSTRUCTORS
+- more concise way
+- Kotlin does not have fields, it has only properties
+- getters and setters have the same visibility as the property or more restrictive
+=> if it is private we cannot declare it outside the class
+- all secondary constructurs must call the primary constructor
+
+Session 8
+CONSTANTS
+- can be declared outside classes
+
+DATA CLASSES
+- classes that stores state (getters, setters)
+- has some predefined methods that we can override
+- equals, toString, copy (how many arguments you want from the other obj)
+
+FUNCTIONS
+- Unit the default value returns by functions; eq with Java void
+- when we have 1 return line we can inline it, also remove the return type
+- {} = block body
+- without {} =  expression body
+- we can call funcs with params in different order
+- varagrs, like in java, except it doesn't have to be last
+- spread operator *
+
+- extension functions - helps when we have utility class
+- inline functions - the body is directly generated in the byte code where te function is called; works best with lambda functions
+
+Session 9
+INHERITANCE
+- open: when we want smth to be extendable or overidden
+- open with abstract is redundant
+- data classes cannot be open or abstract
+
+INTERFACES
+- interfaces are extendable by default
+- the fields in an interface are abstract by default and the can be overidden
+
+SINGLETONS
+Object keyword is used in:
+- singletons =
+- companion objects = replace static objects
+
+Session 10
