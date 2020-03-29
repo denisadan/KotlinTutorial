@@ -1,0 +1,19 @@
+Access modifiers
+- public, private, protected, internal
+TOP-LEVEL
+    - private = visible in the same file
+    - protected - no
+    - public = everywhere
+- we can have them outside a class
+- no match between file name and class name
+- we can have private class
+- module = group a files compiled together
+ - internal = visible in the module
+- by default public and final
+
+CONSTRUCTORS
+- more concise way
+- Kotlin does not have fields, it has only properties
+- getters and setters have the same visibility as the property or more restrictive
+=> if it is private we cannot declare it outside the class
+

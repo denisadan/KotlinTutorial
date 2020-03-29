@@ -1,0 +1,21 @@
+Loops
+
+-- For
+- we use range (inclusive interval) instead of i++
+- if we want a range in reverse order backward we use downTo() or reversed()
+- in case we want to step with n we use range.step(n)
+- iterating over strings: we use IN operator
+- until operator = exclusive interval
+- collection.forEach { println(it) }
+- collection.indices
+- numeFunction@ = labels
+
+-- IF
+- ternary operator does not exist
+- if statement returns a value
+- Any == Object
+- void == unit
+- if returns a unit if does not have a type
+
+-- When
+- equivalent for switch

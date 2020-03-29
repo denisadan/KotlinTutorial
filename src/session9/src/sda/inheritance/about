@@ -1,0 +1,23 @@
+INHERITANCE
+
+- open: when we want smth to be extendable or overidden
+- open with abstract is redundant
+- data classes cannot be open or abstract
+
+INTERFACES
+- interfaces are extendable by default
+- the fields in an interface are abstract by default and the can be overidden
+
+SINGLETONS
+Object keyword is used in:  (watch this again :)
+    - singletons =
+    - companion objects = create them inside clasess and accesss them without an instance of the class
+aka static; grouping static members
+    - used to call private constructors and factory pattern
+    - anonymous instances
+
+ENUMS
+    - similar to java
+    - need ; before a function in enum
+
+IMPORTS
