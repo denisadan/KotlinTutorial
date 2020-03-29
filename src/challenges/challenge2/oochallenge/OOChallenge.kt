@@ -14,14 +14,24 @@ open class KotlinBicycle(var cadence: Int, var speed: Int, var gear: Int = 10) {
 }
 
 class KotlinMountainBike(var seatHeight: Int, cadence: Int, speed: Int, gear: Int) : KotlinBicycle(cadence, speed, gear) {
-    override fun printDescription()  {
+
+    constructor(color: String, seatHeight: Int, cadence: Int, speed: Int, gear: Int) :
+            this(seatHeight, cadence, speed, gear) {
+        println("The color is: $color")
+    }
+
+    companion object {
+        val availableColors = listOf("red", "pink", "white")
+    }
+
+    override fun printDescription() {
         super.printDescription();
         println("The mountain bike has a seat height of $seatHeight.")
     }
 }
 
 // when we have val it means it is immutable; no setter
-class KotlinRoadBike(cadence: Int, speed: Int, gear: Int, val tireWidth: Int) : KotlinBicycle(cadence, speed, gear){
+class KotlinRoadBike(cadence: Int, speed: Int, gear: Int, val tireWidth: Int) : KotlinBicycle(cadence, speed, gear) {
     override fun printDescription() {
         super.printDescription()
         println("The road bike has a tire width of $tireWidth MM.")
@@ -38,15 +48,20 @@ fun main() {
 //    val rb = KotlinRoadBike(1, 2, 3, 4)
 //    rb.printDescription()
 
-
     val b2 = KotlinBicycle(1, 2)
     b2.printDescription()
 
-    val mb2 = KotlinMountainBike(1, 2, 3, 100)
+    val mb2 = KotlinMountainBike("red", 1, 2, 3, 100)
     mb2.printDescription()
+
+    for (c in KotlinMountainBike.availableColors) {
+        println(c)
+    }
+
+    // echivalent
+    KotlinMountainBike.availableColors.forEach { println(it) }
 
     val rb2 = KotlinRoadBike(1, 2, 3, 4)
     rb2.printDescription()
-
 
 }
